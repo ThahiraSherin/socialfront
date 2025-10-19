@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL;
+const baseURL = import.meta.env.VITE_API_URL || '';
+if (!import.meta.env.VITE_API_URL) {
+  // eslint-disable-next-line no-console
+  console.warn('[UserRequest] VITE_API_URL is not set.');
+}
 
-const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // this now points to Render backend
-  withCredentials: true, // optional if you use cookies
-});
+const API = axios.create({ baseURL, withCredentials: true });
 
 
 API.interceptors.request.use((req) => {
