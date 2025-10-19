@@ -1,10 +1,10 @@
-import postPic1 from '../../Img/postPic1.jpg';
-import postPic2 from '../../Img/postPic2.jpg';
-import postPic3 from '../../Img/postPic3.jpg';
-import img1 from '../../Img/1686729699082img1.jpg';
-import img2 from '../../Img/1686730264474img2.jpg';
-import img3 from '../../Img/1686730403370img3.jpg';
-import special from '../../Img/1686729790834pic.jpg';
+import postPic1 from '../../img/postPic1.jpg';
+import postPic2 from '../../img/postPic2.jpg';
+import postPic3 from '../../img/postPic3.jpg';
+import img1 from '../../img/1686729699082img1.jpg';
+import img2 from '../../img/1686730264474img2.jpg';
+import img3 from '../../img/1686730403370img3.jpg';
+import special from '../../img/1686729790834pic.jpg';
 
 export const PostsData = [
   {

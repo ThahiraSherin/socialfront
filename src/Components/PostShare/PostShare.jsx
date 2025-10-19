@@ -8,7 +8,7 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { useDispatch, useSelector } from 'react-redux';
 import { uploadImage, uploadPost } from '../../actions/UploadAction';
 
-import DefaultProfile from '../../Img/defaultProfile.png';
+import DefaultProfile from '../../img/defaultProfile.png';
 
 
 

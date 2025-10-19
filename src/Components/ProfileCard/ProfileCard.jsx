@@ -2,8 +2,8 @@ import React from 'react'
 import './ProfileCard.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import defaultCover from '../../Img/defaultCover.jpg';
-import defaultProfile from '../../Img/defaultProfile.png';
+import defaultCover from '../../img/defaultCover.jpg';
+import defaultProfile from '../../img/defaultProfile.png';
 
 const ProfileCard = ({ location }) => {
 

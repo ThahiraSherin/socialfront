@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { followUser, unFollowUser } from '../../actions/UserAction';
-import defaultProfile from '../../Img/defaultProfile.png';  
+import defaultProfile from '../../img/defaultProfile.png';  
 
 
 const UserFollow = ({ person }) => {

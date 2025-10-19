@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './Post.css';
-import Comment from '../../Img/comment.png';
-import Share from '../../Img/share.png';
-import Like from '../../Img/like.png';
-import Notlike from '../../Img/notlike.png';
+import Comment from '../../img/comment.png';
+import Share from '../../img/share.png';
+import Like from '../../img/like.png';
+import Notlike from '../../img/notlike.png';
 import { useSelector } from 'react-redux';
 import { likePost } from '../../api/PostRequest';
-import defaultPostImage from '../../Img/1686729790834pic.jpg'; // Default image for posts without an image
+import defaultPostImage from '../../img/1686729790834pic.jpg'; // Default image for posts without an image
 
 const Post = ({ data }) => {
 

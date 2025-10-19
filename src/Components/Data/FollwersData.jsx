@@ -1,7 +1,7 @@
 import React from 'react';
 import './Followers.css';
 import { Followers as followersData } from '../Data/Followers';
-import DefaultProfile from '../Img/defaultProfile.png';
+import DefaultProfile from '../img/defaultProfile.png';
 
 const FollowersList = () => {
   return (
