@@ -1,0 +1,40 @@
+.Home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18rem 1fr 20rem; /* left/sidebar - main - right/sidebar */
+  gap: 1.25rem;
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+/* make layout responsive: stack columns on small screens */
+@media (max-width: 980px) {
+  .Home {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* helper spacing for immediate children (keeps components tidy) */
+.Home > * {
+  background: var(--card-bg);
+  padding: 0.75rem;
+  border-radius: 10px;
+  box-shadow: var(--elevation-sm);
+}
+
+/* ensure center column uses full-width cards (PostShare should occupy available width) */
+.Home .PostSide, .Home .PostSide > * {
+  width: 100%;
+}
+
+/* subtle responsive tweaks for sidebars */
+.Home .ProfileSide,
+.Home .ProfilePageLeft,
+.Home .RightSide {
+  padding: 0.5rem;
+}

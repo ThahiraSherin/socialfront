@@ -1,0 +1,39 @@
+.TrendCard{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+}
+
+.TrendCard h3{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+}
+
+.trendsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.trendRow{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    transition: background .12s ease;
+}
+.trendRow:hover{ background: rgba(255,255,255,0.02); }
+
+.trendThumb{
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.trendText{ display:flex; flex-direction: column; }
+.trendName{ font-weight: 600; }
+.trendMeta{ font-size: 0.85rem; color: var(--muted); }

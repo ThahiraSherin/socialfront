@@ -1,0 +1,43 @@
+.InfoCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.infoHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.logout-button {
+    width: 7rem;
+    height: 2.2rem;
+    margin-top: 1rem;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--buttonColor);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,86 @@
+:root {
+  /* Colors */
+  --bg: #0f1724; /* deep neutral background */
+  --surface: #0b1220; /* slightly lighter surface */
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  --muted: #94a3b8;
+  --text: #e6eef6;
+  --brand: #6c7cff;
+  --danger: #ff6b6b;
+
+  /* Elevation */
+  --elevation-sm: 0 6px 18px rgba(2,6,23,0.45);
+  --elevation-md: 0 8px 28px rgba(2,6,23,0.55);
+
+  /* Sizing */
+  --radius: 10px;
+  --gap: 1rem;
+
+  /* Typography */
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --base-size: 16px;
+}
+
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--base-size);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a { color: var(--brand); text-decoration: none; font-weight: 500; }
+a:hover { color: color-mix(in srgb, var(--brand) 80%, white); }
+
+/* Headings */
+h1,h2,h3,h4 { margin: 0 0 0.5rem 0; color: var(--text); }
+h1 { font-size: 2rem; }
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg,var(--brand),#5563f0);
+  color: white;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+button:hover { transform: translateY(-1px); box-shadow: var(--elevation-sm); }
+button:active { transform: translateY(0); box-shadow: none; }
+
+/* Card utility */
+.card {
+  background: rgba(255,255,255,0.02);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  box-shadow: var(--elevation-sm);
+}
+
+/* avatar utility */
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid rgba(255,255,255,0.06);
+}
+
+/* Responsive container */
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f6f8fb; --surface: #ffffff; --card-bg: #fff; --text: #122230; --brand: #4b5cff; }
+  body { background: var(--bg); color: var(--text); }
+  .card { background: var(--card-bg); box-shadow: 0 4px 12px rgba(15,23,42,0.06); }
+}
