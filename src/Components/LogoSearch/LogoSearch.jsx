@@ -1,6 +1,6 @@
 import React from 'react'
 import './LogoSearch.css'
-import Logo from '../../Img/logo.png';
+import Logo from '../../img/logo.png';
 import SearchIcon from '@mui/icons-material/Search';
 
 const LogoSearch = () => {
